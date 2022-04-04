@@ -1,0 +1,11 @@
+*.env*
+*.DS_Store*
+*.log*
+!*.example*
+.gradle
+bin
+run
+build
+dist
+.idea
+.vscode/sftp.json

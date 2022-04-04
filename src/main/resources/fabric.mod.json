@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "luamc",
+  "version": "0.0.1",
+  "name": "LuaCraft",
+  "description": "Lua scripting language in Minecraft",
+  "authors": [
+    "Theo Paris"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      {
+        "value": "com.theoparis.luamc.client.LuaModClient"
+      }
+    ],
+    "main": [
+      {
+        "value": "com.theoparis.luamc.LuaMod"
+      }
+    ]
+  },
+  "mixins": [
+    "luamc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
