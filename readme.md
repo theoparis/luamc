@@ -28,3 +28,4 @@ You can then place this file in the `mods/` folder, and it will be loaded automa
 ## Examples
 
 You can find some examples in the [examples folder](examples).
+

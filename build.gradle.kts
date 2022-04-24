@@ -16,7 +16,6 @@ val minecraftVersion = project.properties["minecraft_version"].toString()
 val fabricLoaderVersion = project.properties["loader_version"].toString()
 val fabricVersion = project.properties["fabric_version"].toString()
 val fabricKotlinVersion = project.properties["fabric_kotlin_version"].toString()
-val imguiVersion = project.properties["imgui_version"].toString()
 
 version = modVersion
 
@@ -36,10 +35,8 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation("net.fabricmc.fabric-api:fabric-api:${fabricVersion}")
 
-    shadow("io.github.spair:imgui-java-binding:${imguiVersion}")
-    shadow("io.github.spair:imgui-java-lwjgl3:${imguiVersion}")
-    shadow("io.github.spair:imgui-java-natives-linux-ft:${imguiVersion}")
     shadow("org.luaj:luaj-jse:3.0.1")
+    shadow("com.gitlab.theoparis:event-bus:main-SNAPSHOT")
 }
 
 
