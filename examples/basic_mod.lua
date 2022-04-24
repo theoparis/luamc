@@ -1,10 +1,3 @@
-local M = {
-    name = "mymod",
-}
-
-M.init = function()
-    -- do stuff
-    print("Hello lua world!")
-end
-
-return M
+events.fire("modInit", {
+    id = "testmod"
+})
