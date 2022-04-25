@@ -1,11 +1,11 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
-    id("fabric-loom") version "0.12-SNAPSHOT"
+    id("fabric-loom") version "0.12.19"
     id("maven-publish")
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("java")
-    id("io.freefair.lombok") version "6.4.1"
+    id("io.freefair.lombok") version "6.4.3"
 }
 
 val modVersion = project.properties["mod_version"].toString()
