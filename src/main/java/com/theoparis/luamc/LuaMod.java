@@ -58,6 +58,8 @@ public class LuaMod implements ModInitializer {
 
                     globals.set("events", luaEvents);
 
+                    globals.load("package.path = package.path .. ';config/luamc/?/?.lua;config/luamc/?.lua'")
+                        .call();
                     globals.load(
                             FileUtils.readFileToString(
                                     mod, Charset.defaultCharset()
