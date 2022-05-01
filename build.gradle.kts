@@ -1,7 +1,7 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
-    id("fabric-loom") version "0.12.19"
+    id("fabric-loom") version "0.12.21"
     id("maven-publish")
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("java")
