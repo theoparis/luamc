@@ -5,7 +5,7 @@ plugins {
     id("maven-publish")
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("java")
-    id("io.freefair.lombok") version "6.4.3"
+    id("io.freefair.lombok") version "6.5.1"
 }
 
 val modVersion = project.properties["mod_version"].toString()
